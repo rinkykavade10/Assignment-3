@@ -1,0 +1,59 @@
+/* 2nd */
+
+package com.tka.demo1;
+import java.util.Scanner;
+
+class emp_detail{
+	 public static void main(String[] args) {
+    String name, city, post;
+    int age;
+    double basic_salary;
+    double da, hra, tra, pt, pf, gross_salary;
+      
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Name: ");
+        name = sc.nextLine();
+
+        System.out.print("Enter Age: ");
+        age = sc.nextInt();
+        sc.nextLine(); 
+
+        System.out.print("Enter City: ");
+        city = sc.nextLine();
+
+        System.out.print("Enter Post: ");
+        post = sc.nextLine();
+
+        System.out.print("Enter Basic Salary: ");
+        basic_salary = sc.nextDouble();
+    
+        da = 0.10 * basic_salary;
+        hra = 0.15 * basic_salary;
+        tra = 0.05 * basic_salary;
+        pt = 0.10 * basic_salary;
+        pf = 0.12 * basic_salary;
+
+        gross_salary = basic_salary + da + hra + tra - (pt + pf);
+    
+        System.out.println("\n Employee  Details ");
+        System.out.println("Name : " + name);
+        System.out.println("Age  : " + age);
+        System.out.println("City : " + city);
+        System.out.println("Post : " + post);
+        System.out.println("Basic Salary : " + basic_salary);
+
+        System.out.println("DA : " + da);
+        System.out.println("HRA : " + hra);
+        System.out.println("TRA: " + tra);
+        System.out.println("PT: " + pt);
+        System.out.println("PF: " + pf);
+        
+        System.out.println("Gross Salary: " + gross_salary);
+       
+        emp_detail e = new emp_detail();
+       
+    }
+}
+
+
