@@ -1,0 +1,31 @@
+package com.tka.demo1;
+import java.util.*;
+public class area {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("enter shape u want to calculate area  ");
+	String  shape = sc.next();
+	
+	double pi = 3.14;
+	if (shape == "circle") {
+		System.out.println("radius =  ");
+		int r = sc.nextInt();
+		System.out.println("area of circle  =  " +pi * (r*r) );	
+	}
+	else if (shape == "rectangle") {
+		System.out.println("length =  ");
+		int l = sc.nextInt();
+		System.out.println("breadth =  ");
+		int b = sc.nextInt();
+		System.out.println("area of rectangle  =  " +(l * b));
+	}
+	else if (shape =="square") {
+		System.out.println("length =  ");
+		int l = sc.nextInt();
+		System.out.println("area of square  =  " +(l * l));
+	}
+	else {
+		System.out.println("no shape ");
+	}
+}
+}
