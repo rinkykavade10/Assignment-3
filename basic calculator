@@ -1,0 +1,48 @@
+package com.tka.demo1;
+import java.util.Scanner;
+
+public class user_choice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter first number: ");
+        double a = sc.nextDouble();
+        System.out.print("Enter second number: ");
+        double b = sc.nextDouble();
+        System.out.print("Enter your choice (1-5): ");
+        int choice = sc.nextInt();
+
+        double c = 0;
+
+        switch (choice) {
+            case 1:
+                c = a + b;
+                System.out.println("Addition = " + c);
+                break;
+
+            case 2:
+                c = a - b;
+                System.out.println("Subtraction = " + c);
+                break;
+
+            case 3:
+                c = a * b;
+                System.out.println("Multiplication = " + c);
+                break;
+
+            case 4:
+                    c = a / b;
+                    System.out.println("Division = " + c);
+                    break;
+
+            case 5:
+                c = a % b;
+                System.out.println("Modulus = " + c);
+                break;
+
+            default:
+                System.out.println("Invalid choice");
+        }
+    }
+}
+
